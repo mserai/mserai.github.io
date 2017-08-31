@@ -2,7 +2,7 @@
   "basics": {
     "name": "Michael Serai",
     "label": "Student",
-    "picture": "https://techfolios.github.io/images/proprofile.jpg",
+    "picture": "https://mserai.github.io/images/proprofile.jpg",
     "email": "mserai@hawaii.edu",
     "phone": "808-226-0450",
     "website": "https://mserai.github.io",
@@ -57,22 +57,9 @@
         "C",
         "C++",
         "Java",
-        "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "Javascript"
       ]
     },
-    {
-      "name": "Toolsets/OS",
-      "level": "",
-      "keywords": [
-        "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
-      ]
-    }
   ],
   "education": [
     {
