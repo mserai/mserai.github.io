@@ -52,7 +52,6 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "level": "",
       "keywords": [
         "C",
         "C++",
@@ -71,7 +70,7 @@
       "gpa": "2.42",
       "courses": ["Basic Concepts of Comp. Sci., Data Storage & Retrieval, Software Engineering I, Security and Trust I"
       ]
-    }
+    },
     {
       "institution": "Leeward Community College, Pearl City, HI",
       "area": "Computer Science",
