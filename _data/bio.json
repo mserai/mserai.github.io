@@ -23,7 +23,7 @@
       {
         "network": "linkedin",
         "username": "mserai",
-        "url": "http://linkedin.com/in/mserai"
+        "url": "http://linkedin.com/in/michael-serai-1472b88b"
       },
       {
         "network": "instagram",
@@ -64,23 +64,33 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "area": "Computer Science (expected Fall, 2018)",
+      "studyType": "B.A",
+      "startDate": "2017-01-01",
       "endDate": "Present",
-      "gpa": "",
-      "courses": [
+      "gpa": "2.42",
+      "courses": ["Basic Concepts of Comp. Sci., Data Storage & Retrieval, Software Engineering I, Security and Trust I"
+      ]
+    }
+    {
+      "institution": "Leeward Community College, Pearl City, HI",
+      "area": "Computer Science",
+      "studyType": "B.A",
+      "startDate": "2014-09-01",
+      "endDate": "2016-12-15",
+      "gpa": "3.70",
+      "courses": ["ICS 111, 211, 212, 241"
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "California Pizza Kitchn",
+      "position": "Bar, Pizza Cook, Pasta Cook, Server",
       "website": "",
-      "startDate": "2015-08-01",
+      "startDate": "2006-06-13",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Wears many hats",
       "highlights": [
         "Maintain, update, and oversee official college newspaper website",
         "Drive, design and build student-community projects for UH Manoa"
