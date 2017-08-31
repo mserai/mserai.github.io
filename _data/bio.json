@@ -75,11 +75,29 @@
       "institution": "Leeward Community College, Pearl City, HI",
       "area": "Computer Science",
       "studyType": "B.A",
-      "startDate": "2014-09-01",
+      "startDate": "2015-01-01",
       "endDate": "2016-12-15",
       "gpa": "3.70",
       "courses": ["ICS 111, 211, 212, 241"
       ]
+    },
+    {
+      "institution": "Kapiolani Community College, Honolulu, HI",
+      "area": "Computer Science",
+      "studyType": "B.A",
+      "startDate": "2014-09-01",
+      "endDate": "2014-12-1",
+      "gpa": "3.00",
+      "courses": ["ICS 141"
+      ]
+    },
+    {
+      "institution": "University of San Francisco, San Francisco, CA",
+      "area": "History",
+      "studyType": "B.A",
+      "startDate": "2003-09-01",
+      "endDate": "2006-5-01",
+      "gpa": "2.60"
     }
   ],
   "work": [
