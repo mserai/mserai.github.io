@@ -1,5 +1,5 @@
 ---
-layout: PowerPoint Project
+layout: project
 type: project
 image: images/PowerPointImage.png
 title: PowerPoint Project
