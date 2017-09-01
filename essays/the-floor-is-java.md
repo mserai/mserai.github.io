@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 published: true
-title: The Floor is Java
+title: The Floor is Java!
 date: 2017-09-01
 labels:
   - Javascript
@@ -18,9 +18,9 @@ I associate the learning of programming languages with learning how to run befor
 
 <hr>
 
-## What’s a smart question?
+## Swimming through Java
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+Although I having never touched Javascript before, I found it to be rather welcoming. Almost like a neighbor from down the street that you haven't seen in 10 years. You want to know how they've been and what they have been doing since you last spoke. 
 
 In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
 
