@@ -1,5 +1,5 @@
 ---
-layout: Computer Build
+layout: project
 type: project
 image: 
 title: Building a Computer
