@@ -13,6 +13,8 @@ summary: I taught my girlfriend how to build a computer.
 ---
 
 <img class="ui image" src="../images/pcc.jpg">
+<hr>
+<hr>
 <img class="ui image" src="../images/PC2.jpg">
 <hr>
 <hr>
