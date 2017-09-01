@@ -10,7 +10,7 @@ labels:
 summary: My group composed a PowerPoint presentation for a World Literature class on Giribala.
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/GiriPic.png">
+<img class="ui image" src="../images/GiriPic.png">
 <img class="ui image" src="../images/Screenshot (3).png">
 
 <hr>
@@ -22,3 +22,4 @@ I was teamed with three other students to present on the topic of Giribala, a st
 
 <hr>
 <hr>
+<img class="ui image" src="../images/Screenshot (4).png">
