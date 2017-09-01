@@ -12,9 +12,9 @@ labels:
 
 <img class="ui medium left floated image" src="../images/javascript.png">
 
-## Is there such thing as a stupid question?
+## The Floor is Java!
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+I associate the learning of programming languages with learning how to run before you walk. The FreeCodeCamp Javascript modules are a fantastic tool to get you started and have prepared me with the vernacular of Javascript. I am not truly a beginner, I have had some practice with Java for two semesters and C/C## for another, but it is always nice to have a refresher of sorts.  
 
 ## What’s a smart question?
 
