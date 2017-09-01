@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: 
+image: images/enthoo.jpg
 title: Building a Computer
 permalink: projects/buildcomp
 date: 2016
