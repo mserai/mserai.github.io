@@ -22,4 +22,4 @@ I was teamed with three other students to present on the topic of Giribala, a st
 
 <hr>
 <hr>
-<img class="ui image" src="../images/Screenshot (4).png">
+<img class="ui image" src="../images/giri.PNG">
