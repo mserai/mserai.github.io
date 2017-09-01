@@ -13,3 +13,6 @@ summary: My group composed a PowerPoint presentation for a World Literature clas
 <hr>
 <pre>
 For this project I learned how to utilize cuts of YouTube videos and voiceover dialog to present on the topic.
+</pre>
+<hr>
+<hr>
