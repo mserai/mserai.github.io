@@ -13,7 +13,7 @@ summary: I taught my girlfriend how to build a computer.
 ---
 
 <img class="ui image" src="../images/pcc.jpg">
-<img class="ui image" src="../images/PC2.JPG">
+<img class="ui image" src="../images/PC2.jpg">
 <hr>
 <hr>
 
@@ -23,7 +23,11 @@ I built my last computer 2009 and it was time for an upgrade. In the spring of 2
 <hr>
 
 <img class="ui image" src="../images/SteffyOculus.jpg>
-<img class="ui image" src="../images/PC.JPG">
+
+<hr>
+<hr>
+
+
 Specs:
 
 Case: Phanteks Enthoo Pro Full Tower
