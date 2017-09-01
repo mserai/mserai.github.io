@@ -1,15 +1,15 @@
 ---
-layout: project
+layout: Computer Build
 type: project
 image: images/micromouse.jpg
-title: Micromouse
-permalink: projects/micromouse
-date: 2015
+title: Computer Building Lesson
+permalink: projects/buildcomp
+date: 2016
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - Computer
+  - Training
+  - Windows
+summary: I taught my girlfriend how to build a computer.
 ---
 
 <div class="ui small rounded images">
