@@ -22,9 +22,13 @@ I built my last computer 2009 and it was time for an upgrade. In the spring of 2
 Specs:
 
 Case: Phanteks Enthoo Pro Full Tower
+
 MB: ASUS ROG Maximus VII Hero Alpha
+
 Processor: Intel i7-6700k @4.00GHz
+
 Video Card: NVIDIA GeForce GTX 980 Ti Hybrid
+
 RAM: G.SKILL 32GB Ripjaws V
 
 <hr>
