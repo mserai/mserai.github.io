@@ -2,59 +2,339 @@
 layout: project
 type: project
 image: images/cotton-square.png
-title: Cotton
+title: Java
 permalink: projects/cotton
 date: 2014
 labels:
-  - Lisp
-  - GitHub
-summary: A text adventure game I developed for ICS 313.
+  - Java
+  - CSV
+summary: program I wrote in 211 involving csv files, read ins, and manipulation of data.
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/cotton-header.png">
+After several assignments in 211, we tied the section together by combining code from the previous assignments. There is a lot of functionality behind these concepts, and I enjoyed glueing them together. I learned how to read in from files, store them in data structures, manipulate them, and finally output them.   
 
-Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
-
-To give you a flavor of the game, here is an excerpt from one run:
-
+<hr>
 <hr>
 
 <pre>
-You open your eyes, and you are greeted by an unfamiliar ceiling.
-Startled, you get to your feet and quickly scan your surroundings. It's
-dark except for the stream of light coming from a crack on the only boarded
-window in the room. You try to peek through the crack, but you cannot see
-anything. You wonder where you are and who could have possibly brought you here.
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+/**
+* Write a super class and subclass, store data from a file into an array, and change the data with methods.
+*
+* @author Serai, Mike
+* @assignment ICS 211 Assignment 10
+* @date 2/17/2016
+*/
+public class SeraiMike10 {
+   public static void main(String[] args) {
+      // Determines if a commandline argument was entered
+      if (args.length != 1) {
+         System.out.println("Please enter exactly 1 commandline argument.");
+         System.exit(1);
+      }
+      // Create a constant
+      final Integer SIZE = 10;
+      // Create an array of islands of the pacific objects
+      IslandsOfThePacificTwoMore islandsArray[] = new IslandsOfThePacificTwoMore[SIZE];
+          
+      // Print the array with null values
+      System.out.println("The Islands of the Pacific before initializing elements:" + "\n");
+      System.out.println("Index  Element");
+         for (int i = 0; i < SIZE; i++){
+            System.out.printf("%d" + "      "+"%-10s\n", i, islandsArray[i]);
+         }//for
+      // Begin reading from the file entered
+      System.out.println("\n" + "Connect to: " + args[0] + "\n");
+         int size = 0;
+         File file = new File(args[0]);
+         Scanner fileConnect = null;
+         // Connect with the file
+         try {
+            fileConnect = new Scanner(file);
+         }
+         catch (FileNotFoundException exception) {
+            // Catch if file is not found
+            System.out.print("File not found for: " + args[0]);
+         }     
+         // If the file is found
+         if(fileConnect != null) {
+            // Store the headers of the file
+            String firstLineOfFile = fileConnect.nextLine();
+            // Loop through the remaining lines of the file
+            while (fileConnect.hasNextLine()) {
+               // Store a line in the file
+               String line = fileConnect.nextLine();
+               // Seperate the line with commas
+               Scanner lineInput = new Scanner(line).useDelimiter(",");
+               //Store each section of the line that is seperated by commas
+               String islandName = lineInput.next();
+               String islandPopulation = lineInput.next();
+               String islandArea1 = lineInput.next();
+               String islandCapital = lineInput.next();
+               String islandElevation1 = lineInput.next();
+               // Convert the String to a Double
+               Double islandArea = .0;
+               try {
+               islandArea = Double.parseDouble(islandArea1);
+               }
+               // Confirm the line stored is a double with try/catch
+               catch (NumberFormatException exception) {
+                  System.out.println("not a double");
+               }
+               // Convert the String to a Double
+               Double islandElevation = .0;
+               try {
+               islandElevation = Double.parseDouble(islandElevation1);
+               }
+               // Confirm the line stored is a double with try/catch
+               catch (NumberFormatException exception) {
+                  System.out.println("not a double");
+               }  
+               // Initialize the array with an element
+               islandsArray[size] = new IslandsOfThePacificTwoMore(islandName, islandPopulation,
+                                        islandArea, islandCapital, islandElevation);
+                     size ++;
+            }
+               // Print the Array with the values from the file
+               System.out.println("The Islands of the Pacific after initializing elements:" + "\n");
+                  System.out.println("Index Name of the Island    Population            Area              Capital          Elevation" +
+                                  "\n");
+                     for (int i = 0; i < SIZE; i++){
+                     // Use toString to print
+                     System.out.printf("%d" + "     "+"%-10s \n", i, islandsArray[i].toString());
+                     }
+         // Declare variables used in get/set methods
+         String islandName = "blank";
+         String islandPopulation = "blank";
+         Double islandArea = 0.0;
+         String islandCapital = "blank";
+         Double islandElevation = 0.0;
+            // Utilize Get, Set and upperName methods to change the data
+            for (int i = 0; i < SIZE; i++) {
+               islandName = islandsArray[i].getName();
+               islandsArray[i].setName(islandName);
+               islandsArray[i].upperName();
+            }
+            // Utilize Get, Set and noPop methods to change the data
+            for (int i = 0; i < SIZE; i++) {
+               islandPopulation = islandsArray[i].getPop();
+               islandsArray[i].setPop(islandPopulation);
+               islandsArray[i].noPop();
+            }
+            // Utilize Get, Set and kiloArea methods to change the data
+            for (int i = 0; i < SIZE; i++) {
+               islandArea = islandsArray[i].getArea();
+               islandsArray[i].setArea(islandArea);
+               islandsArray[i].kiloArea();
+            }
+            // Utilize Get, Set and upperCapital methods to change the data
+            for (int i = 0; i < SIZE; i ++) {
+               islandCapital = islandsArray[i].getCapital();
+               islandsArray[i].setCapital(islandCapital);
+               islandsArray[i].upperCapital();
+            }
+            // Utilize Get, Set and kiloElevation methods to change the data
+            for (int i = 0; i < SIZE; i ++) {
+               islandElevation = islandsArray[i].getElevation();
+               islandsArray[i].setElevation(islandElevation);
+               islandsArray[i].kiloElevation();
+            }     
+         // Print the Array with the changed values 
+         System.out.println("The Islands of the Pacific after changing the elements:" + "\n");
+         System.out.println("Index Name of the Island    Population          Area(km)            Capital        Elevation(km)" +
+                                  "\n");
+                     for (int i = 0; i < SIZE; i++){
+                     // Use toString to print
+                     System.out.printf("%d" + "     "+"%-10s \n", i, islandsArray[i].toString());
+                     }                    
+         }// if               
+   }// Main
+}// Class
 
-<--------------------help------------------------>
-Enter quit or one of the following commands -
-Weld light look walk pickup inventory help h ?
-<------------------------------------------------>
-
-look
-The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
- lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
- only way out of the room aside from the door to the corridor is a window that is boarded shut. It
- looks like it has been like that for decades. There is a door going west from here. You see a candle
- on the floor. You see a match on the floor.
-
-pickup candle
-- you are now carrying the candle -
-
-pickup match
-- you are now carrying the match -
-
-light match candle
-
-The candle is now lit. It illuminates everything in the room.
-
-walk west
-The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
- there are words written on the wall. There is a door going east from here. There is a way going north
- from here. There is a door going south from here.
+/**
+ * IslandsOfThePacific superclass stores and displays the data for each object
+ *
+ * @author Serai, Mike
+ * @date 2/18/2016
+ */
+class IslandsOfThePacific {
+   // Data Fields
+   protected String name;
+   protected String population;
+   protected Double area;
+   public static final Double DCONVERT = 2.58999;
+   /**
+    * The Constructor initializes the data fields
+    *
+    * @param islandName is the name of the island
+    * @param islandPopulation is the string of integers representing the island's population
+    * @param islandArea is the double representing the island's area
+    */
+   public IslandsOfThePacific (String islandName, String islandPopulation, Double islandArea) {
+      name = islandName;
+      population = islandPopulation;
+      area = islandArea;
+   }
+   /**
+    * Gets the Island Name
+    *
+    * @return the Island Name
+    */
+   public String getName () {
+      return name;
+   }
+   /**
+    * Gets the Island Population
+    *
+    * @return the Island Population
+    */
+   public String getPop () {
+      return population;
+   }
+   /**
+    * Gets the Island Area
+    *
+    * @return the Island Area
+    */
+   public Double getArea () {
+      return area;
+   }
+   /**
+    * Sets the Island Name
+    *
+    * @param islandName is the Island's name
+    */
+   public void setName (String islandName) {
+      name = islandName;
+   }
+   /**
+    * Sets the Island Population
+    *
+    * @param islandPopulation is the Island's population
+    */
+   public void setPop (String islandPopulation) {
+      population = islandPopulation;
+   }
+   /**
+    * Sets the Island Area
+    *
+    * @param islandArea is the Island's area
+    */
+   public void setArea (Double islandArea) {
+      area = islandArea;
+   }
+    /**
+    * Changes the Island's name to uppercase
+    **/
+   public void upperName () {
+      name = name.toUpperCase();
+   }
+   /**
+    * Changes the Island's population to 0
+    */
+   public void noPop () {
+      population = "0";
+   }
+   /**
+    * Converts the Island's area to kilometers
+    */
+   public void kiloArea () {
+      area = area * DCONVERT;
+   }
+   /**
+    * The toString() method returns a String with the three data fields
+    *
+    * @return the output of the initialized array
+    */
+   public String toString(){
+      String output = String.format("%-10s %19s %18.2f\n", name, population, area);
+      return output;
+   }
+}// Class
+/**
+ * A subclass of IslandsOfThePacific
+ *
+ * @author Serai, Mike
+ * @date 2/18/2016
+ */
+class IslandsOfThePacificTwoMore extends IslandsOfThePacific {
+   // Data Fields
+   private String capital;
+   private Double elevation;
+   /**
+    * The Constructor initializes the data fields
+    *
+    * @param islandName is the name of the island
+    * @param islandPopulation is the string of integers representing the island's population
+    * @param islandArea is the double representing the island's area
+    * @param islandCapital is the name of the capital of the island
+    * @param islandElevation is the max elevation of the island
+    */
+   public IslandsOfThePacificTwoMore (String islandName, String islandPopulation, Double islandArea,
+                                       String islandCapital, Double islandElevation) {
+      // Utilize super to initialize the variables from IslandsOfThePacific
+      super (islandName, islandPopulation, islandArea);
+      capital = islandCapital;
+      elevation = islandElevation;
+   }// Constructor
+   /**
+    * Gets the Island Capital
+    *
+    * @return the Island Capital
+    */
+   public String getCapital () {
+      return capital;
+   }
+   /**
+    * Gets the Island Elevation
+    *
+    * @return the Island Elevation
+    */
+   public Double getElevation () {
+      return elevation;
+   }
+   /**
+    * Sets the Island Capital
+    *
+    * @param islandCapital is the Island's Capital
+    */
+   public void setCapital (String islandCapital) {
+      capital = islandCapital;
+   }
+   /**
+    * Sets the Island Elevation
+    *
+    * @param islandElevation is the Island's elevation
+    */
+   public void setElevation (Double islandElevation) {
+      elevation = islandElevation;
+   }
+   /**
+    * Changes the Island's Capital to uppercase
+    **/          
+   public void upperCapital () {
+      capital = capital.toUpperCase ();
+   }
+   /**
+    * Converts the Island's elevation to kilometers
+    */ 
+   public void kiloElevation () {
+      elevation = elevation * DCONVERT;
+   } 
+   /**
+    * The toString() method returns a String with the five data fields
+    *
+    * @return the output of the initialized array
+    */
+   public String toString(){
+      String output = String.format("%-10s %19s %18.2f %19s % 18.2f\n", name, population, area, capital, elevation);
+      return output;
+   }// toString
+}// Class
 </pre>
 
 <hr>
-
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+<hr>
 
