@@ -103,10 +103,11 @@
   "work": [
     {
       "company": "California Pizza Kitchen",
-      "position": "Bar, Pizza Cook, Pasta Cook, Server",
-      "website": "",
+      "position": "Bar, Pizza Cook, Pasta Cook, Shift Leader",
+      "website": "https://www.cpk.com/Location/Details/Pearlridge",
       "startDate": "2006-06-13",
       "endDate": "Present",
+      "summary": "Wears Many Hats",
       "highlights": [
         "Shift Leader, 2012-present",
         "Manager, 2013-2014",
@@ -117,9 +118,8 @@
         "Take-out Server, 2007-2008",
         "Busser, 2007-2008",
         "Host, 2006-2007"
-      ],
-      "summary": "Wears many hats",
-    },
+      ]
+    }
   ],
   "references": [
     {
