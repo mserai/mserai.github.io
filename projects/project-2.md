@@ -1,7 +1,7 @@
 ---
 layout: PowerPoint Project
 type: project
-image: 
+image: images/PowerPointImage.png
 title: PowerPoint Project
 permalink: projects/powerpoint
 date: 2016
