@@ -1,6 +1,7 @@
 ---
 layout: essay
 type: essay
+published: true
 title: The Floor is Java
 date: 2017-09-01
 labels:
