@@ -2,12 +2,12 @@
 layout: essay
 type: essay
 published: false
-title: Smart Questions, Good Answers
-date: 2015-09-08
+title: The Floor is Java
+date: 2017-09-01
 labels:
-  - Questions
-  - Answers
-  - StackOverflow
+  - Javascript
+  - Tutorials
+  - WODs
 ---
 
 <img class="ui medium left floated image" src="../images/rtfm.png">
