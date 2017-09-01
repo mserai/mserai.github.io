@@ -1,7 +1,6 @@
 ---
 layout: essay
 type: essay
-published: false
 title: The Floor is Java
 date: 2017-09-01
 labels:
@@ -10,7 +9,7 @@ labels:
   - WODs
 ---
 
-<img class="ui medium left floated image" src="../images/rtfm.png">
+<img class="ui medium left floated image" src="../images/javascript.png">
 
 ## Is there such thing as a stupid question?
 
