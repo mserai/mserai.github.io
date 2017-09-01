@@ -20,16 +20,26 @@ I associate the learning of programming languages with learning how to run befor
 
 ## Swimming through Java(script)
 
-Although I have never touched Javascript before, I found it to be rather welcoming. Almost like a friend from down the street that you haven't seen in 10 years. You want to know how they've been and what they've been doing since you last spoke. With Javascript, I feel the sense of familiarity, yet I know that I will need to make an effort in conveying the same coding practices I've learned in this programming language. As with every learning experience, treading by and allowing the current to drift you, won't get you anywhere in software engineering. You need to make an effort in going from a beginner, to a veteran, and to a master. 
+Although I have never touched Javascript before, I found it to be rather welcoming. Almost like a friend from down the street that you haven't seen in 10 years. You want to know how they've been and what they've been doing since you last spoke. With Javascript, I feel the sense of familiarity, yet I know that I will need to make an effort in conveying the same coding practices I've learned in this programming language. As with every learning experience, treading by and allowing the current to drift you, won't get you anywhere in software engineering. You need to make an effort in going from a beginner, to a veteran, and to a master. To acclimate us to our new environment, we have been giving
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+```
+function projectEulerOne(value){
+  let solution = 0;
+  for(i = 0; i < value; i ++){
+  	if (((i % 3) ==0) || ((i % 5) == 0)) {
+  	solution += i;
+  }
+  }
+  return solution;
+}
+console.log(projectEulerOne(1000));
+
+```
 
 <hr>
 
 ## I Java(script) you!
 
-blah 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
 
 ## The foolproof way to get ignored.
 
