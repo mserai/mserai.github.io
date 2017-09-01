@@ -7,7 +7,9 @@ permalink: projects/powerpoint
 date: 2016
 labels:
   - PowerPoint
-summary: My group composed a PowerPoint presentation for a World Literature class.
+summary: My group composed a PowerPoint presentation for a World Literature class on Giribala.
 ---
-
+<hr>
+<hr>
+<pre>
 For this project I learned how to utilize cuts of YouTube videos and voiceover dialog to present on the topic.
