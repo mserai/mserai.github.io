@@ -10,8 +10,8 @@ labels:
 summary: My group composed a PowerPoint presentation for a World Literature class on Giribala.
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/PowerPointImage.png">
-<img class="ui image" src="../images/PowerPointImage.png">
+<img class="ui image" src="{{ site.baseurl }}/images/GiriPic.png">
+<img class="ui image" src="../images/Screenshot (3).png">
 
 <hr>
 <hr>
