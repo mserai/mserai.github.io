@@ -32,7 +32,7 @@ I built my last computer 2009 and it was time for an upgrade. In the spring of 2
 <hr>
 <hr>
 
-<img class="ui image" src="../images/SteffyOculus.jpg>
+<img class="ui image" src="../images/SteffyOculus.jpg">
 
 <hr>
 <hr>
