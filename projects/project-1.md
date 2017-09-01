@@ -2,7 +2,7 @@
 layout: Computer Build
 type: project
 image: images/micromouse.jpg
-title: Computer Building Lesson
+title: Building a Computer
 permalink: projects/buildcomp
 date: 2016
 labels:
