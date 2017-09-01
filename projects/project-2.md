@@ -3,7 +3,7 @@ layout: PowerPoint Project
 type: project
 image: 
 title: PowerPoint Project
-permalink: projects/vacay
+permalink: projects
 date: 2016
 labels:
   - PowerPoint
