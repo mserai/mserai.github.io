@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 published: true
-title: The Floor is Java!
+title: The Floor is Java(script)!
 date: 2017-09-01
 labels:
   - Javascript
@@ -12,70 +12,23 @@ labels:
 
 <img class="ui medium left floated image" src="../images/javascript.png">
 
-## The Floor is Java!
+## The Floor is Java(script)!
 
 I associate the learning of programming languages with learning how to run before you walk. The FreeCodeCamp Javascript modules are a fantastic tool to get you started and have prepared me with the vernacular of Javascript. I am not truly a beginner when it comes to coding, I have had some practice with Java for two semesters and C/C## for another, but it is always nice to have a refresher of sorts. When studying programming languages, I try to think of them as foreign languages, where I wish to convey expressions and emotions rather than memorize specific words.    
 
 <hr>
 
-## Swimming through Java
+## Swimming through Java(script)
 
-Although I having never touched Javascript before, I found it to be rather welcoming. Almost like a neighbor from down the street that you haven't seen in 10 years. You want to know how they've been and what they have been doing since you last spoke. 
+Although I have never touched Javascript before, I found it to be rather welcoming. Almost like a friend from down the street that you haven't seen in 10 years. You want to know how they've been and what they've been doing since you last spoke. With Javascript, I feel the sense of familiarity, yet I know that I will need to make an effort in conveying the same coding practices I've learned in this programming language. As with every learning experience, treading by and allowing the current to drift you, won't get you anywhere in software engineering. You need to make an effort in going from a beginner, to a veteran, and to a master. 
 
 In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
 
-```
-Q: python date of the previous month
+<hr>
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+## I Java(script) you!
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
-
-```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
+blah 
 The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
 
 ## The foolproof way to get ignored.
