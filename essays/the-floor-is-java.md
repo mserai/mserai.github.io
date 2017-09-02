@@ -41,7 +41,7 @@ console.log(projectEulerOne(1000));
 
 ## I Java(script) you!
 
-   For each WOD, ranges of completion times are provided to test your efficiency as well. For the first WOD I shot for the average time of (4-6 min), as I had stitches sewn into my finger the night before from an unfortunate incident at work. I ended with 4:47.80 and called it quits. As for the next WOD, we drew on the wonderful Fibonacci and to not only map his sequence, but to find the sum of all even-valued terms up to the given value. I chose not to settle for the average time range and mustered on until I completed it in 2:40.26 from scratch.  
+   For each WOD, ranges of completion times are provided to test your efficiency as well. For the first WOD I shot for the average time of (4-6 min), as I had stitches sewn into my finger the night before from an unfortunate incident at work. I ended with 4:47.80 and called it quits. As for the next WOD, we drew on the wonderful Fibonacci and had to not only map his sequence, but to find the sum of all even-valued terms up to the given value. I chose not to settle for the average time range and mustered on until I completed it in 2:40.26 from scratch.  
 
 <hr>
 
