@@ -35,7 +35,6 @@ function projectEulerOne(value){
   return solution;
 }
 console.log(projectEulerOne(1000));
-
 ```
 
 <hr>
@@ -64,7 +63,6 @@ let total = 0;
   return total;
 }
 console.log(projectEulerTwo(4000000));
-
 ```
 
 <hr>
