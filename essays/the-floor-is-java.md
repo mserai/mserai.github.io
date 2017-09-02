@@ -12,7 +12,7 @@ labels:
 
 <img class="ui medium left floated image" src="../images/javascript.png">
 
-## The Floor is Java(script)!
+# The Floor is Java(script)!
 
    I associate the learning of programming languages with learning how to run before you walk. The FreeCodeCamp Javascript tutorials are a fantastic tool to get you started and have prepared me with the vernacular of Javascript. I am not truly a beginner when it comes to coding, I have had some practice with Java for two semesters and C/C++ for another, but it is always nice to have a refresher of sorts. When studying programming languages, I try to think of them as foreign languages, where I wish to convey expressions and emotions rather than memorize specific words.
 
