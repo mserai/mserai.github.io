@@ -68,4 +68,4 @@ console.log(projectEulerTwo(4000000));
 	
 ## Conclusion
 
-	In conclusion, I believe that the WODs and the "athletic software engineering" routine is beneficial in that I am always doing something relating to software engineering. Creating pockets of time everyday is a challenge when working and going to school full-time, but I feel as though I will learn more, as the topics are always in the back of my mind. 
+	In conclusion, I believe that the WODs and the "athletic software engineering" routine is beneficial in that I am always doing something relating to software engineering. Creating pockets of time everyday is a challenge when working and going to school full-time, but I feel as though I will learn more, as the topics are always in the back of my mind. As of my first week with Javascript, I would have to say that I enjoy the language because it seems short and sweet. I look forward to gathering more experience with it and say I can truly become proficient in its nomenclature. 
