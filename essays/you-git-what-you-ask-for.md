@@ -29,12 +29,12 @@ By phrasing what you have to ask in the form of a thought-provoking question, yo
 
 ## How To Not Git What You Want
 
-By now a great many of us have found threads on forums that are last minute inqueries that were made hastily, or requests for short conceptual descriptions that are clearly designed to circumvent reading the source material. Those kinds of questions are referenced in "How To Ask Questions The Smart Way" as the kinds of questions that will go unanswered, or answered with an acronym involving explitives. However there are some people who are willing to help, in the case of [this author](https://stackoverflow.com/questions/43940886/xaml-code-wont-compile) who was willing to fix the author's code for them. There was no exchange of ideas and it certainly wasn't a thought-provoking question.
+By now a great many of us have found threads on forums that are last minute inquiries that were made hastily, or requests for short conceptual descriptions that are clearly designed to circumvent reading the source material. Those kinds of questions are referenced in "How To Ask Questions The Smart Way" as the kinds of questions that will go unanswered, or answered with an acronym involving expletives. However there are some people who are willing to help regardless of the question, and in the case of [this author](https://stackoverflow.com/questions/43940886/xaml-code-wont-compile) he/she had someone who was willing to fix their code for them. There was no exchange of ideas and it certainly wasn't a thought-provoking question.
 
 <hr>
 	
 ## Conclusion
 
- 
+The mixed feelings I have for Raymond's essay revolves around my own personal experience as an outsider of this select group of people. Although I have insight and am able to ask questions in a smart way, I have yet to earn the technical prowess that affords me the responsibility of being asked smart and dumb questions. I believe that kindness does go a long way and that it can be conveyed and felt through words on a page as similarly to how they sound in person. The hacker culture that is described in this work benefits everyone and should be read by all. It benefits those who belong to it, to those who flirt along its circles, and even those who have no business being in the same ballpark as the hackers being pulled and prodded by questions. 
 
 <hr>
