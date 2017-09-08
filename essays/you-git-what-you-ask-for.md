@@ -29,15 +29,8 @@ By phrasing what you have to ask in the form of a thought-provoking question, yo
 
 ## How To Not Git What You Want
 
-By now a great many of us have found threads on forums that are last minute inqueries that were made hastily, or requests for short conceptual descriptions that are clearly designed to circumvent reading the source material. Those kinds of questions are referenced in "How To Ask Questions The Smart Way" as the kinds of questions that will go unanswered, or answered with an acronym involving explitives.  
-<hr>
+By now a great many of us have found threads on forums that are last minute inqueries that were made hastily, or requests for short conceptual descriptions that are clearly designed to circumvent reading the source material. Those kinds of questions are referenced in "How To Ask Questions The Smart Way" as the kinds of questions that will go unanswered, or answered with an acronym involving explitives. However there are some people who are willing to help, in the case of [this author](https://stackoverflow.com/questions/43940886/xaml-code-wont-compile) who was willing to fix the author's code for them. There was no exchange of ideas and it certainly wasn't a thought-provoking question.
 
-
-
-<hr>
-
-
-	
 <hr>
 	
 ## Conclusion
