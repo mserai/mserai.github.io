@@ -23,12 +23,13 @@ By all accounts it makes sense to me that someone who is not being paid to speci
 
 <hr>
 
-By phrasing what you have to ask in the form of a thought-provoking question, you allow for a dialogue that a larger number of people will want to chime in on. [This page](https://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js) links to a question I found on StackOverFlow that demonstrates some of Eric Raymond's qualities of a smart question.
+By phrasing what you have to ask in the form of a thought-provoking question, you allow for a dialogue that a larger number of people will want to chime in on. [This page](https://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js) links to a question I found on StackOverFlow that demonstrates some of Eric Raymond's qualities of a smart question. The author of the question describes exactly what information he/she is looking for, what he/she already knows and in this case, has already taken into account. The replies to the inquiry divulge information that is attainable by the author due to the level of knowledge he/she has exhibited in the formation of the question
 
 <hr>
 
-##   
+## How To Not Git What You Want
 
+By now a great many of us have found threads on forums that are last minute inqueries that were made hastily, or requests for short conceptual descriptions that are clearly designed to circumvent reading the source material. Those kinds of questions are referenced in "How To Ask Questions The Smart Way" as the kinds of questions that will go unanswered, or answered with an acronym involving explitives.  
 <hr>
 
 
