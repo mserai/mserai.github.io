@@ -20,19 +20,12 @@ summary: I taught my girlfriend how to build a computer.
 <hr>
 <hr>
 
+I built my last computer in 2009 and it was time for an upgrade. In the spring of 2016 I was able to purchase all the parts that would allow me to create my new system. My girlfriend showed interest in the process, so I suggested that she take on the responsibility herself. After a few viewings of YouTube tutorials, I deconstructed my old system to allow her to get familiar with the components. When she became comfortable enough, I talked her through some of the initial steps and then took a backseat as she built my (which is now our) new computer.
+
+<hr>
+<hr>
+
 <img class="ui image" src="../images/PC2.jpg">
-
-<hr>
-<hr>
-
-
-I built my last computer 2009 and it was time for an upgrade. In the spring of 2016 I was able to purchase all the parts that would allow me to create my new system. My girlfriend showed interest in the process, so I suggested that she take on the responsibility herself. After a few viewings of YouTube tutorials, I deconstructed my old system to allow her to get familiar with the components. When she became comfortable enough, I talked her through some of the initial steps and then took a backseat as she built my (which is now our) new computer.
-
-
-<hr>
-<hr>
-
-<img class="ui image" src="../images/SteffyOculus.jpg">
 
 <hr>
 <hr>
