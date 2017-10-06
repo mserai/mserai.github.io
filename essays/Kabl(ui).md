@@ -14,7 +14,7 @@ labels:
 
 # Kabl(ui)  
 
-
+By beginning the UI Frameworks coursework without Semantic UI only made me appreciate it further once we dug into it. 
 
 <hr>
 
