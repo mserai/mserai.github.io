@@ -10,7 +10,7 @@ labels:
   - CSS
 ---
 
-<img class="ui tiny right floated image" src="../images/semantic.png">
+<img class="ui small right floated image" src="../images/semantic.png">
 
 # Kabl(ui)  
 
