@@ -10,7 +10,7 @@ labels:
   - CSS
 ---
 
-<img class="ui small left floated logo" src="../images/semantic.png">
+<img class="ui tiny right floated image" src="../images/semantic.png">
 
 # Kabl(ui)  
 
@@ -26,6 +26,6 @@ Semantic UI does take some time to learn, and when being new to HTML and CSS, it
 	
 ## Conclusion
 
-Overall I found Semantic UI to be a wonderful tool that has peaked my interest in webpage building. 
+Overall I found Semantic UI to be a wonderful tool that has peaked my interest in webpage building. I have yet to master Semantic UI's vernacular, and am very interested in playing around with its functionality even further. 
 
 <hr>
