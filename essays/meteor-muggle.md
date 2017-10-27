@@ -3,7 +3,7 @@ layout: essay
 type: essay
 published: true
 title: Meteor From A Muggle's Perspective
-date: 2017-09-01
+date: 2017-10-26
 labels:
   - Meteor
   - Application Design
