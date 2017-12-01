@@ -20,20 +20,6 @@ labels:
 
 ## Protecting your Privacy
 
-
-
-<hr>
-
-
-
-<hr>
-
-
-
-<hr>
-	
-## Conclusion
-
-
+  With the many headline breaches and hacks that have occured within the past few years, the protection of our privacy has never been more important. As the definition of privacy and how we protect it is ever changing in the landscape of big data and its aggregation, our work must continue to go hand in hand with our own code of ethics. We as software engineers must lead in the advancements of the technologies our companies are built upon to the ethical standards we are held to. The collection of data conducted in an ethical way will be what defines our abilities to remain ethical. My pursuit of a security science focus of computer science will rely on my ability to protect the data that allows me to continue the advancements of the technology I wish to shape. I believe that I will always need to do better to protect the investments I am lucky enough to take part in, and I can always count on my belief in the betterment of society to make sure that comes true.
 
 <hr>
