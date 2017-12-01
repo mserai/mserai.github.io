@@ -12,8 +12,8 @@ labels:
 
 <img class="ui small left floated image" src="../images/privacy.png">
 
-# Code of Ethics
-
+# What are a Code of Ethics?
+	From a very young age, my mother instilled the Golden Rule upon me. To treat others as you would wish to be treated.
  
 
 <hr>
