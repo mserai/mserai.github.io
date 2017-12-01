@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 published: true
-title: You Git What You Ask For
+title: Protecting your Privacy
 date: 2017-11-30
 labels:
   - Software Engineering
