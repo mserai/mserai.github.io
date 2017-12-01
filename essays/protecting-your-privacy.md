@@ -10,7 +10,7 @@ labels:
   - Privacy
 ---
 
-<img class="ui medium left floated image" src="../images/privacy.png">
+<img class="ui small left floated image" src="../images/privacy.png">
 
 # Code of Ethics
 
