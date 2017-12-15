@@ -9,7 +9,7 @@ labels:
   - How To Ask Questions The Smart Way
 ---
 
-<img class="ui medium left floated image" src="../images/stack.png">
+<img class="ui small left floated image" src="../images/stack.png">
 
 # You Git What You Ask For 
 
