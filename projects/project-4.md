@@ -16,11 +16,11 @@ labels:
 summary: Manoa Recipes final project for ICS 314.
 ---
 
-After several assignments in 211, we tied the section together by combining code from the previous assignments. There is a lot of functionality behind these concepts, and I enjoyed glueing them together. I learned how to read in from files, store them in data structures, manipulate them, and finally output them.   
+
 
 <hr>
 
-[Follow this link to the assignment](https://github.com/mserai/211-Assignment)
+[Follow this link to the project](https://manoarecipes.github.io/)
 
 <hr>
 
