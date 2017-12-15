@@ -20,8 +20,6 @@ I built my last computer in 2009 and it was time for an upgrade. In the spring o
 
 <hr>
 
-<img class="ui image" src="../images/PC2.jpg">
-
 Specs:
 
 Case: Phanteks Enthoo Pro Full Tower
