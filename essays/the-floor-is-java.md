@@ -10,7 +10,7 @@ labels:
   - WODs
 ---
 
-<img class="ui medium left floated image" src="../images/javascript.png">
+<img class="ui small left floated image" src="../images/javascript.png">
 
 # The Floor is Java(script)!
 
