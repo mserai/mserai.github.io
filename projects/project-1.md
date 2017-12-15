@@ -36,6 +36,4 @@ RAM: G.SKILL 32GB Ripjaws V
 
 <img class="ui medium image" src="../images/PC2.jpg">
 
-<hr>
-
 Steffany's next step is to learn how to write some code!
