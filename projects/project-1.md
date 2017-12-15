@@ -20,7 +20,7 @@ I built my last computer in 2009 and it was time for an upgrade. In the spring o
 
 <hr>
 
-<img class="ui right floated medium image" src="../images/PC2.jpg">
+<img class="ui left floated medium image" src="../images/PC2.jpg">
 
 Specs:
 
