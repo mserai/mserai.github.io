@@ -3,8 +3,8 @@
 layout: project
 type: project
 image: images/git.png
-title: 314 Final Project
-permalink: projects/314finalproject
+title: Meteor
+permalink: projects/meteor
 date: 12/13/2017
 labels:
   - Meteor
