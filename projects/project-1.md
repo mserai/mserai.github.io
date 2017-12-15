@@ -38,4 +38,4 @@ RAM: G.SKILL 32GB Ripjaws V
 
 <hr>
 
-Steffany's next step is to learn how to code!
+Steffany's next step is to learn how to write some code!
