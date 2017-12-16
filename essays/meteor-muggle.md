@@ -10,7 +10,7 @@ labels:
   - Software Engineering
 ---
 
-<img class="ui medium left floated image" src="../images/meteor.png">
+<img class="ui small left floated image" src="../images/meteor.png">
 
 # Meteor
 
