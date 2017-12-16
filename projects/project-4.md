@@ -4,7 +4,7 @@ type: project
 image: images/git.png
 title: Meteor
 permalink: projects/meteor
-date: 12/13/2017
+date: 2017
 labels:
   - Meteor
   - Issue Based Project Management
