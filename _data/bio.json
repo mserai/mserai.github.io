@@ -75,11 +75,14 @@
     {
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2019)",
+      "website": "http://www.catalog.hawaii.edu/courses/departments/ics.htm,
       "studyType": "B.A",
       "startDate": "2017-01-01",
       "endDate": "Present",
       "gpa": "3.05",
-      "courses": ["Basic Concepts of Comp. Sci., Data Storage & Retrieval, Software Engineering I, Security and Trust I"
+      "courses": ["Basic Concepts of Comp. Sci.",
+                   "Data Storage & Retrieval"
+                  , "Software Engineering I", "Security and Trust I"
       ]
     },
     {
