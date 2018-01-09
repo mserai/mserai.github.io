@@ -34,27 +34,27 @@
   },
   "interests": [
     {
-      "name": "software engineering",
+      "name": "Cyber Security",
       "keywords": [
       ]
     },
     {
-      "name": "real time bidding",
+      "name": "Information Assurance",
       "keywords": [
       ]
     },
     {
-      "name": "computer security",
+      "name": "Real Time Bidding",
       "keywords": [
       ]
     },
     {
-      "name": "robotics",
+      "name": "Robotics",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "Social Engineering",
       "keywords": [
       ]
     }
@@ -66,18 +66,19 @@
         "C",
         "C++",
         "Java",
-        "Javascript"
+        "Javascript",
+        "SQL"
       ]
     },
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Fall, 2018)",
+      "area": "Computer Science (expected Spring, 2019)",
       "studyType": "B.A",
       "startDate": "2017-01-01",
       "endDate": "Present",
-      "gpa": "2.42",
+      "gpa": "3.05",
       "courses": ["Basic Concepts of Comp. Sci., Data Storage & Retrieval, Software Engineering I, Security and Trust I"
       ]
     },
