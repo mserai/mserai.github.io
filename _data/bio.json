@@ -79,9 +79,7 @@
       "startDate": "2017-01-01",
       "endDate": "Present",
       "gpa": "3.05",
-      "courses": ["Basic Concepts of Comp. Sci.",
-                   "Data Storage & Retrieval"
-                  , "Software Engineering I", "Security and Trust I"
+      "courses": ["Operating Systems", "Computer Security and Ethics", "Data Networks", "Security and Trust II: Information Assurance", "ICS 222, 314, 321, 355"
       ]
     },
     {
