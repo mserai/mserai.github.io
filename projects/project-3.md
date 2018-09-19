@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/cholera.jpg
 title: Cholera Project
-permalink: projects/javascript
+permalink: projects/cholera
 date: 2018
 labels:
   - Javascript
