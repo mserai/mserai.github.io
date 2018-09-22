@@ -9,7 +9,7 @@ labels:
   - Javascript
   - CSS
   - Plot.ly
-summary: Data Visualization Project 1
+summary: Data Visualization Project Part B
 ---
 <!DOCTYPE html>
 <html lang="en">
