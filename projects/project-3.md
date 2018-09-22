@@ -12,7 +12,7 @@ labels:
 summary: Data Visualization Project 1
 ---
 
-This project on cholera is an assignment for ICS 484: Data Visualization, whose goal is to represent csv and tsv data in multiple forms (Line Graph, Bar Graph, Pie Chart, etc.) Project 1 was completed using Plot.ly and CSS.  
+This project on cholera is an assignment for ICS 484: Data Visualization, whose goal is to represent csv and tsv data in multiple forms (Line Graph, Bar Graph, Pie Chart, etc.) Project 1 was completed using Plot.ly, Semantic, CSS.  
 
 <hr>
 
