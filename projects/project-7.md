@@ -11,7 +11,6 @@ labels:
   - Plot.ly
 summary: Data Visualization Project Part A
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
