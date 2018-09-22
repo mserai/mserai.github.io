@@ -1,4 +1,16 @@
-
+---
+layout: project
+type: project
+image: images/cholera.jpg
+title: Cholera Project
+permalink: projects/cholera
+date: 2018
+labels:
+  - Javascript
+  - CSS
+  - Plot.ly
+summary: Data Visualization Project 1
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
