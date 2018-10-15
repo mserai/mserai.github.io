@@ -3,37 +3,399 @@ layout: project
 type: project
 image: images/enthoo.jpg
 title: Building a Computer
-permalink: projects/buildcomp
-date: 2016
+permalink: projects/vegalite
+date: 2018
 labels:
-  - Computer
-  - Training
-  - Windows
-summary: I taught my girlfriend how to build a computer.
+  - Vega-lite
+  - Data Visualization
+summary: Vega-Lite w/ Cholera Data.
 ---
 
-<hr> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vega-Lite Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@4.2.0/build/vega.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6/build/vega-lite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.19.2/build/vega-embed.js"></script>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">-->
+  <style media="screen">
+    /* Add space between Vega-Embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<h1>Template for Embedding Vega-Lite Visualization</h1>
+<!-- Container for the visualization -->
+<div class="ui fluid container">
+<div id="vis"style="padding-bottom: 10px"></div>
+</div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks from Cholera Deaths JSON</h1>
+<div class="ui fluid container">
+<div id="vis1"style="padding-bottom: 10px"></div>
+</div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Deaths</h1>
+<div id="vis2"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks</h1>
+<div id="vis3"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks</h1>
+<div id="vis4"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks/Deaths</h1>
+<div id="vis5"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks/Deaths</h1>
+<div id="vis6"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks/Deaths</h1>
+<div id="vis7"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Cholera Attacks/Deaths</h1>
+<div id="vis8"style="padding-bottom: 10px"></div>
+<div>
+  <div class="ui fluid container">
+    <div style="border-style: solid"></div>
+  </div>
+</div>
+<h1>Dashboard</h1>
+<div id="vis9"style="padding-bottom: 10px"></div>
+<script>
 
-<img class="ui left floated medium image" src="../images/pcc.jpg">
+  // Assign the specification to a local variable vlSpec.
+  var vlSpec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {
+      "values": [
+        {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+        {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+        {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "a", "type": "nominal"},
+      "x": {
+        "aggregate": "average", "field": "b", "type": "quantitative",
+        "axis": {
+          "title": "Average of b"
+        }
+      }
+    }
+  };
+  var vlSpec1 = {
+    "height": 400,
+    "width": 750,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "mark": {"type": "line", "color": "blue",
+      "point": {"color": "red"}},
+    "encoding": {
+      "y": {"field": "Attack", "type": "quantitative"},
+      "x": {
+        "timeUnit": "yearmonthdate",
+        "field": "Date",
+        "type": "temporal"
+      }
+    }
+  };
+  var vlSpec2 = {
+    /*"$schema": "https://vega.github.io/schema/vega-lite/v2.json",*/
+    "height": 500,
+    "width": 1000,
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "mark": {"type": "line", "color": "blue",
+      "point": {"color": "red"}},
+    "encoding": {
+      "y": {"field": "Death", "type": "quantitative"},
+      "x": {
+        "timeUnit": "yearmonthdate",
+        "field": "Date",
+        "type": "temporal"
+      }
+    }
+  };
 
-I built my last computer in 2009 and it was time for an upgrade. In the spring of 2016 I was able to purchase all the parts that would allow me to create my new system. My girlfriend, Steffany showed interest in the process, so I suggested that she take on the responsibility herself. After a few viewings of YouTube tutorials, I deconstructed my old system to allow her to get familiar with the components. When she became comfortable enough, I talked her through some of the initial steps and then took a backseat as she built my (which is now our) new computer. She was able to configure the storage configuration we wanted and practiced the process of backing up our data.
+  var vlSpec3 = {
+    "height": 400,
+    "width": 1200,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "Attack", "type": "quantitative"},
+      "x": {
+        "timeUnit": "yearmonthdate",
+        "field": "Date",
+        "type": "temporal"
+      }
+    }
+  };
+  var vlSpec4 = {
+    "height": 400,
+    "width": 1200,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/choleraDeaths.tsv"
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Attack", "type": "quantitative"},
+      "y": {
+        "timeUnit": "yearmonthdate",
+        "field": "Date",
+        "type": "temporal"
+      }
+    }
+  };
+  var vlSpec5 = {
+    /*"$schema": "https://vega.github.io/schema/vega-lite/v2.json",*/
+    "height": 500,
+    "width": 1000,
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "layer": [
+        {
+          "selection": {
+            "brush": {
+              "type": "interval",
+              "encodings": ["x"]
+            }
+          },
+      "mark": {
+        "type": "line", "color": "blue",
+        "point": { "color": "red" }
+      },
+      "encoding": {
+        "y": { "field": "Death", "type": "quantitative" },
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "Date",
+          "type": "temporal"
+        }
+      },
+          "opacity": {
+            "condition": {
+              "selection": "brush", "value": 1
+            },
+            "value": 0.7
+          }
 
-<hr>
+      },
+      {
+      "mark": {
+        "type": "line", "color": "green",
+        "point": { "color": "red" }
+      },
+      "encoding": {
+        "y": { "field": "Attack", "type": "quantitative" },
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "Date",
+          "type": "temporal"
+        }
+      }
+      },
+      {
+        "transform": [{
+          "filter": {"selection": "brush"}
+        }],
+        "mark": {
+          "type": "rule", "color": "black"
+        },
+        "encoding": {
+          "y": { "aggregate": "mean", "field": "Attack", "type": "quantitative" },
+        }
+      },
+      {
+        "transform": [{
+          "filter": {"selection": "brush"}
+        }],
+        "mark": {
+          "type": "rule", "color": "black"
+        },
+        "encoding": {
+          "y": { "aggregate": "mean", "field": "Death", "type": "quantitative" },
+        }
+      }
+    ]
+  };
+  var vlSpec6 = {
+    /*"$schema": "https://vega.github.io/schema/vega-lite/v2.json",*/
+    "height": 500,
+    "width": 1000,
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "line", "color": "red",
+          "point": { "color": "green" }
+        },
+        "encoding": {
+          "y": { "field": "Death", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          }
+        }
+      },
+      {
+        "mark": "bar",
+        "encoding": {
+          "y": { "field": "Attack", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          }
+        }
+      }
+    ]
+  };
+  var vlSpec7 = {
+    "height": 500,
+    "width": 1000,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "color": "blue"},
+        "encoding": {
+          "y": { "field": "Death", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          }
+        }
+      },
+      {
+        "mark": {"type": "bar", "color": "yellow"},
+        "encoding": {
+          "y": { "field": "Attack", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          }
+        }
+      }
+    ]
+  };
+  var vlSpec8 = {
+    "height": 500,
+    "width": 1000,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "color": "blue"},
+        "encoding": {
+          "y": { "field": "Death", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          },
+          "opacity": {"value": 0.8 }
+        }
+      },
+      {
+        "mark": {"type": "bar", "color": "pink"},
+        "encoding": {
+          "y": { "field": "Attack", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          },
+          "opacity": {"value": 0.8 }
+}
+},
+    ]
+  };
+  var vlSpec9 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/Cholera/master/CholeraDeaths.json"
+    },
+    "hconcat": [{
+      "repeat": {
+        "column": [
+          "Attack",
+          "Death"
+        ],
+      },
+      "spec": {
+        "height": 400,
+        "width": 600,
+        "mark": "bar",
+        "encoding": {
+          "y": { "field": { "repeat": "column" }, "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "Date",
+            "type": "temporal"
+          }
+        }
+      }
+    }]
 
-Specs:
-
-Case: Phanteks Enthoo Pro Full Tower
-
-MB: ASUS ROG Maximus VII Hero Alpha
-
-Processor: Intel i7-6700k @4.00GHz
-
-Video Card: NVIDIA GeForce GTX 980 Ti Hybrid
-
-RAM: G.SKILL 32GB Ripjaws V
-
-<hr>
-
-<img class="ui medium image" src="../images/PC2.jpg">
-
-Steffany's next step is to learn how to write some code!
+  };
+  // Embed the visualization in the container with id `vis`
+  vegaEmbed("#vis", vlSpec);
+  vegaEmbed("#vis1", vlSpec1);
+  vegaEmbed("#vis2", vlSpec2);
+  vegaEmbed("#vis3", vlSpec3);
+  vegaEmbed("#vis4", vlSpec4);
+  vegaEmbed("#vis5", vlSpec5);
+  vegaEmbed("#vis6", vlSpec6);
+  vegaEmbed("#vis7", vlSpec7);
+  vegaEmbed("#vis8", vlSpec8);
+  vegaEmbed("#vis9", vlSpec9);
+</script>
+</body>
+</html>
