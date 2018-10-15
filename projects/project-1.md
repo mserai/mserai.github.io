@@ -1,5 +1,5 @@
 ---
-layout: project2
+layout: project
 type: project
 image: images/enthoo.jpg
 title: Vega-Lite
