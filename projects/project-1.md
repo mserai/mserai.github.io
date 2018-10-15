@@ -17,7 +17,7 @@ summary: Vega-Lite w/ Cholera Data.
   <script src="https://cdn.jsdelivr.net/npm/vega@4.2.0/build/vega.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6/build/vega-lite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.19.2/build/vega-embed.js"></script>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
   <style media="screen">
     /* Add space between Vega-Embed links  */
     .vega-actions a {
