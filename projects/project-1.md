@@ -10,8 +10,6 @@ labels:
   - Data Visualization
 summary: Vega-Lite w/ Cholera Data.
 ---
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
