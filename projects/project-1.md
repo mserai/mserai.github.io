@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/enthoo.jpg
-title: Building a Computer
+title: Vega-Lite
 permalink: projects/vegalite
 date: 2018
 labels:
