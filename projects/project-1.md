@@ -95,7 +95,6 @@ summary: Vega-Lite w/ Cholera Data.
   </div>
 </div>
 <h1>Dashboard</h1>
-<div id="vis9"style="padding-bottom: 10px"></div>
 <script>
 
   // Assign the specification to a local variable vlSpec.
