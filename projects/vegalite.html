@@ -18,7 +18,7 @@ summary: Vega-Lite w/ Cholera Data.
   <script src="https://cdn.jsdelivr.net/npm/vega@4.2.0/build/vega.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6/build/vega-lite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.19.2/build/vega-embed.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">-->
   <style media="screen">
     /* Add space between Vega-Embed links  */
     .vega-actions a {
@@ -27,12 +27,9 @@ summary: Vega-Lite w/ Cholera Data.
   </style>
 </head>
 <body>
-  <div>
-  <div class="ui fluid container">
-    <div style="width: 100%">
+
 <h1>Template for Embedding Vega-Lite Visualization</h1>
 <!-- Container for the visualization -->
-<div class="ui fluid container">
 <div class="ui fluid container">
 <div id="vis"style="padding-bottom: 10px"></div>
 </div>
@@ -99,10 +96,8 @@ summary: Vega-Lite w/ Cholera Data.
     <div style="border-style: solid"></div>
   </div>
 </div>
-  </div>
-  </div>
-    </div>
 <h1>Dashboard</h1>
+<div id="vis9"style="padding-bottom: 10px"></div>
 <script>
 
   // Assign the specification to a local variable vlSpec.
@@ -403,6 +398,4 @@ summary: Vega-Lite w/ Cholera Data.
   vegaEmbed("#vis9", vlSpec9);
 </script>
 </body>
-</div>
-  </div>
 </html>
