@@ -24,7 +24,7 @@ summary: Data Visualization Project Part A
   <div style="padding-top: 8px; padding-left: 200px"><p>Stars represent pumps. Circles represent deaths. The bigger and darker the circle, the more deaths at each location.</p></div>
   </nav>
 <body>
-<div class="ui fluid container">
+<div class="ui large container">
 <div id="map"></div>
 </div>
 <script>
