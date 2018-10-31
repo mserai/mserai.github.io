@@ -44,8 +44,8 @@ summary: Data Visualization Project Part A
         pumpX.push(rows1[i]["x"]);
         pumpY.push(rows1[i]["y"]);
       }
-      pumpX.push(rows1[i][21.298472]);
-      pumpY.push(rows1[i][-157.817582]);                                 
+      pumpX.push(rows1[i]["21.298472"]);
+      pumpY.push(rows1[i]["-157.817582"]);                                 
       var colors = [[0, 'rgb(256,0,0)'],[0.25,'rgb(200, 36, 36)'],[0.5,'rgb(132, 73, 73)'],[0.75,'rgb(73, 0, 0)'],[1,'rgb(0,0,0)']];
       /*2. Show a map of the locations of the deaths...*/
       var plots = [{
