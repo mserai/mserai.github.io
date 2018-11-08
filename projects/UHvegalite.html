@@ -1,0 +1,108 @@
+---
+layout: project2
+type: project
+image: images/uh.jpg
+title: UH Heatmap - Totals
+permalink: projects/uhmap
+date: 2018
+labels:
+  - Plot.ly
+  - MapBox
+  - Data Visualization
+summary: Vega-Lite w/ Cholera Data.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UH Law Library</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@4.2.0/build/vega.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6/build/vega-lite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.19.2/build/vega-embed.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <style media="screen">
+    /* Add space between Vega-Embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="ui fluid container">
+  <div id="vis"style="padding-bottom: 10px"></div>
+</div>
+<div class="ui fluid container">
+  <div id="vis1"style="padding-bottom: 10px"></div>
+</div>
+<script>
+
+  var vlSpec1 = {
+    "height": 400,
+    "width": 750,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/mserai/ICS484/master/UHLawLibraryTotal.csv"
+    },
+    "mark": {"type": "line", "color": "blue",
+      "point": {"color": "red"}},
+    "encoding": {
+      "y": {"field": "number", "type": "quantitative"},
+      "x": {
+        "timeUnit": "yearmonthdatehours",
+        "field": "date",
+        "type": "temporal"
+      }
+    }
+  };
+  var vlSpec5 = {
+    /*"$schema": "https://vega.github.io/schema/vega-lite/v2.json",*/
+    "height": 500,
+    "width": 1000,
+    "data": {"url": "https://raw.githubusercontent.com/mserai/ICS484/master/UHLawLibraryTotal.csv"
+    },
+    "layer": [
+      {
+        "selection": {
+          "brush": {
+            "type": "interval",
+            "encodings": ["x"]
+          }
+        },
+        "mark": {
+          "type": "line", "color": "blue",
+          "point": { "color": "red" }
+        },
+        "encoding": {
+          "y": { "field": "number", "type": "quantitative" },
+          "x": {
+            "timeUnit": "yearmonthdatehours",
+            "field": "date",
+            "type": "temporal"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "selection": "brush", "value": 1
+          },
+          "value": 0.7
+        }
+
+      },
+      {
+        "transform": [{
+          "filter": {"selection": "brush"}
+        }],
+        "mark": {
+          "type": "rule", "color": "black"
+        },
+        "encoding": {
+          "y": { "aggregate": "mean", "field": "number", "type": "quantitative" },
+        }
+      },
+    ]
+  };
+  vegaEmbed("#vis", vlSpec1);
+  vegaEmbed("#vis1", vlSpec5);
+  </script>
+
+</body>
+</html>
