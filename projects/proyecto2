@@ -1,0 +1,337 @@
+---
+layout: project2
+type: project
+image: images/cholera.jpg
+title: Proyecto 2
+permalink: projects/proyecto2
+date: 2018
+labels:
+  - Vega-lite
+  - Data Visualization
+summary: Spanish Project 2 
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ui topmenu menu">
+    <img class="ui fitted left image item" src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/chile.jpg" style="height:65px">
+  <a class="item" style="padding-right: 150px"> ¡Surf y esquí el mismo dia!</a>
+  <select>
+    <option value="res">Excursiones</option>
+    <option value="res1">Más popular</option>
+    <option value="res2">Paquete simple</option>
+    <option value="res3">Paquete de lugo</option>
+    <option value="res3">Para la Familia</option>
+  </select>
+  <select>
+    <option value="res">Hoteles</option>
+    <option value="res1">Tierra Patagonia</option>
+    <option value="res2">Hotel Portillo</option>
+    <option value="res3">Hotel Alaia</option>
+    <option value="res3">Mirador Los Volcanes</option>
+  </select>
+  <select>
+    <option value="res">Equipo</option>
+    <option value="res1">Para Surfear</option>
+    <option value="res2">Equipo de Snowboard</option>
+    <option value="res3">Equipo de esquí</option>
+  </select>
+  <select>
+    <option value="res">Transportacion</option>
+    <option value="res1">Todo Terreno</option>
+    <option value="res2">Autobús</option>
+    <option value="res3">Medios de transporte públicos</option>
+  </select>
+  <a class="item">Contáctenos<i class="envelope outline icon"></i></a>
+  <select>
+    <option value="res">Español</option>
+    <option value="res1">English</option>
+  </select>
+</div>
+
+<div class="ui grid">
+  <div class="one wide column"style="background-color: SkyBlue">
+  </div>
+  <div class="fourteen wide column"style="background-color: PowderBlue">
+    <div class="ui centered huge header">Ir a una aventura!
+      <form>
+        ¿Cuando?:
+        <input type="date" name="start">
+        <input type="submit">
+      </form>
+    </div>
+    <div class="ui grid">
+  <img class="ui centered image" img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/surfer.png" height="500px" style="padding-right: 0px">
+</div>
+    <div class="ui centered huge header">Paquetes Populares</div>
+    <div class="ui four column grid">
+
+  <div class="column">
+    <div class="ui fluid card">
+      <a class="image" href="#">
+        <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/surfSnow.jpg" style="height: 300px" width="275px">
+      </a>
+      <div class="content">
+        <i class="right floated like icon"></i>
+        <i class="right floated star icon"></i>
+        <a class="header">Más Popular</a>
+        <div class="description">
+          <p>Despierta junto a la playa en el Hotel Alaia y después de surfear, viajar a Portillo!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <a class="image" href="#">
+        <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/surfing.jpg" style="height: 300px" width="275px">
+      </a>
+      <div class="content">
+        <i class="right floated like icon"></i>
+        <i class="right floated star icon"></i>
+        <a class="header">Paquete simple</a>
+        <div class="description">
+          <p>Servicio de transporte hacia y desde dos de cuatro lugares populares</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <a class="image" href="#">
+        <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/resort.jpg" style="height: 300px" width="275px">
+      </a>
+      <div class="content">
+        <i class="right floated like icon"></i>
+        <i class="right floated star icon"></i>
+        <a class="header">Paquete de lugo</a>
+        <div class="description">
+          <p>Aventura de dos días y tres noches</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <a class="image" href="#">
+        <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/flag.png" style="height: 300px" width="275px">
+      </a>
+      <div class="content">
+        <i class="right floated like icon"></i>
+        <i class="right floated star icon"></i>
+        <a class="header">Para la familia</a>
+        <div class="description">
+          <p>Con niños en mente</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="ui centered huge header">Elige un Hotel!!!</div>
+    <div class="ui four column grid">
+      <div class="column">
+        <div class="ui fluid card">
+          <a class="image" href="https://tierrahotels.com/patagonia/">
+            <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/tierra.jpg" style="height: 300px" width="275px">
+          </a>
+          <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <a class="header">Tierra Patagonia</a>
+            <div class="description">
+              <p>Resort de lugo dentro el parque nacional Torres del Paine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid card">
+          <a class="image" href="http://www.skiportillo.com/en/">
+            <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/HotelPort.jpg" style="height: 300px" width="275px">
+          </a>
+          <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <a class="header">Hotel Portillo</a>
+            <div class="description">
+              <p>Lugar de esquí más antiguo y más famoso </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid card">
+          <a class="image" href="http://hotelalaia.com/">
+            <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/ala.jpg" style="height: 300px" width="275px">
+          </a>
+          <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <a class="header">Hotel Alaia</a>
+            <div class="description">
+              <p>Punta de Lobos tiene el surf más consistente del mundo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid card">
+          <a class="image" href="https://www.miradorlosvolcanes.com/en/">
+            <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/mirador.jpg" style="height: 300px" width="275px">
+          </a>
+          <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <a class="header">Mirador Los Volcanes</a>
+            <div class="description">
+              <p>Visita nuestros parques nacionales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<div class="main content">
+  <div class="ui centered huge header">Reserva Nuestro Equipo!!!</div>
+  <div class="ui three column grid">
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/surfboard.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Para Surfear</a>
+          <div class="description">
+            <p>Reserva tablas de surf en todos tamaños</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/snowboardequip.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Equipo de Snowboard</a>
+          <div class="description">
+            <p>Chaqueta, Casco, Tabla de Snowboard</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/skis.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Equipo de esquí</a>
+          <div class="description">
+            <p>Esquís y los Bastónes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui centered huge header">Reserva Una Forma de Transportacion!!!</div>
+  <div class="ui three column grid">
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/SUV.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Todo Terreno</a>
+          <div class="description">
+            <p>Viaje con estilo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/shuttle.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Autobús</a>
+          <div class="description">
+            <p>Tienen almacén para el equipo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <a class="image" href="#">
+          <img src="https://raw.githubusercontent.com/mserai/mserai.github.io/master/images/bus.jpg" style="height: 300px" width="275px">
+        </a>
+        <div class="content">
+          <i class="right floated like icon"></i>
+          <i class="right floated star icon"></i>
+          <a class="header">Medios de transporte públicos</a>
+          <div class="description">
+            <p>Más barato</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<div class="one wide column"style=background-color:SkyBlue>
+</div>
+</div>
+<div>
+  <p></p>
+</div>
+<div class="ui footer">
+    <div class="ui centered two row container">
+      <div class="first row">
+        </div>
+  <div class="centered row">
+    <a class="item"><i class="phone icon"></i></a>
+    <a class="item">+56 65 277 2080 &nbsp</a>
+  </div>
+      <div class="centered row">
+    <a class="item"><i class="mail icon"></i></a>
+    <a class="item">Email Us &nbsp</a>
+      </div>
+      <div class="centered row">
+    <a class="item"><i class="home icon"></i></a>
+    <a class="item">Chile &nbsp</a>
+      </div>
+      <div class="centered row">
+        <a class="fitted item"><i class="twitter icon"></i></a>
+    <a class="fitted item"><i class="facebook f icon"></i></a>
+    <a class="fitted item"><i class="instagram icon"></i></a>
+    <a class="fitted item"><i class="pinterest icon"></i></a>
+    <a class="fitted right item"><i class="tripadvisor icon"></i></a>
+      </div>
+      </div>
+
+    </div>
+</div>
+</body>
+</html>
