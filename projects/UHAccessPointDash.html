@@ -65,7 +65,7 @@ summary: UH "Heat Map" w/ totals.
           <option value="https://raw.githubusercontent.com/mserai/ICS484/master/admin.csv">Administration Building</option>
         </select> &lt; Select a data set
       </p>
-      <div id="chartdiv" style="width: 400px;height: 400px"></div>
+      <div id="chartdiv" style="width: 600px;height: 600px"></div>
     </div>
 </div>
     </div>
@@ -145,8 +145,8 @@ summary: UH "Heat Map" w/ totals.
           },
         }];
         layout = {
-          height: 370,
-          width: 1400,
+          height: 600,
+          width: 2000,
           dragmode: 'zoom',
           title: 'UH Access Point Data',
           mapbox: {
@@ -220,8 +220,8 @@ summary: UH "Heat Map" w/ totals.
           var data = [trace1];
 
           var layout = {
-            height: 400,
-            width: 1200
+            height: 600,
+            width: 2000
           };
 
           Plotly.newPlot(plots1, data, layout);
