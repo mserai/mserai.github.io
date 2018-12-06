@@ -1,0 +1,350 @@
+---
+layout: project2
+type: project
+image: images/uh.jpg
+title: UH Heatmap - Totals
+permalink: projects/uhmap
+date: 2018
+labels:
+  - Plot.ly
+  - MapBox
+  - Data Visualization
+summary: UH "Heat Map" w/ totals.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UH Dashboard</title>
+  <head>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  </head>
+</head>
+<body>
+<div class="ui grid">
+    <div class="twelve wide column">
+      <div class="ui container">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="four wide column">
+      <p class="selector">
+        <select id="building" onclick="newdata" onchange="setDataSet(this.options[this.selectedIndex].value);">
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Art.csv">Art Building</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Bach.csv">Bachman Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Campus.csv">Campus Center</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Crawford.csv">Crawford Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/EastWest.csv">East West Center</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Gatewau.csv">Gateway</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Hawaii.csv">Hawaii Institute</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/HawaiiHall.csv">Hawaii Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Keller.csv">Keller Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Kennedy.csv">Kennedy Theater</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Korean.csv">Korean</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Kuy.csv">Kuykendall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Kuyken.csv">Kuykendall 2</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/LawL.csv">Law Library</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/LawS.csv">Law School</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Micro.csv">Microbial</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Physical.csv">Physical Building</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Queen.csv">Queen Liliuokalani</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Sinclair.csv">Sinclair Library</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Warrior.csv">Warrior Recreation</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Watanabe.csv">Watanabe Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/Webster.csv">Webster Hall</option>
+          <option value="https://raw.githubusercontent.com/mserai/ICS484/master/admin.csv">Administration Building</option>
+        </select> &lt; Select a data set
+      </p>
+      <div id="chartdiv" style="width: 400px;height: 400px"></div>
+    </div>
+</div>
+    </div>
+  <div class="eight wide column" style="border-color: black">
+    <div class="ui container">
+      <div class="showcase__section" id="bubble">
+        <div class="spacer --small"></div>
+        <div id="bubbleplots">
+          <div class="bubbleplot" data-num="0">
+            <div class="control-row">
+              Access Point: <select class="accessPointData">
+            </select>
+            </div>
+            <div class="plot" id="plots1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eight wide column">
+    <div class="ui container">
+    </div>
+  </div>
+</div>
+<script>
+  var building = document.getElementById("building")
+  var url ="https://raw.githubusercontent.com/mserai/ICS484/master/UHFinal.csv"
+  Plotly.d3.csv('https://raw.githubusercontent.com/mserai/ICS484/master/UHFinal.csv', function(err, rows){
+    Plotly.d3.csv('https://raw.githubusercontent.com/mserai/ICS484/master/UHAccessPoints.csv', function(err1, rows1) {
+      Plotly.d3.csv('https://raw.githubusercontent.com/mserai/ICS484/master/UHTotals.csv', function (err2, rows2) {
+        function unpack(rows, key) {
+          return rows.map(function (row) {
+            return row[key];
+          });
+        }
+
+        var accessPointy = [];
+        var accessPointx = [];
+        var accessPointName = [];
+        /*Grab*/
+        accessPointy.push(Object.keys(rows1[0])[0]);
+        accessPointx.push(Object.keys(rows1[0])[1]);
+        accessPointName.push(Object.keys(rows1[0])[2]);
+        for (var i = 0; i < rows1.length; i++) {
+          accessPointx.push(rows1[i]["lat"]);
+          accessPointy.push(rows1[i]["long"]);
+          accessPointName.push(rows1[i]["name"]);
+        }
+        var colors = [[0, '#d0d1e6'], [0.25, '#a6bddb'], [0.5, '#67a9cf'], [0.75, '#3690c0'], [1, '#02818a']];
+
+        var map = [{
+          type: 'scattermapbox',
+          mode: 'markers+text',
+          text: unpack(rows1, 'name'),
+          lon: unpack(rows2, 'long'),
+          lat: unpack(rows2, 'lat'),
+          hovertext: unpack(rows2, 'number'),
+          marker: {
+            color: unpack(rows2, 'number'),
+            colorscale: colors,
+            cmin: 0,
+            cmax: 45000,
+            reversescale: false,
+            opacity: 1,
+            size: unpack(rows2, 'number'),
+            sizeref: 500,
+            colorbar: {
+              //x: -0.15,
+              thickness: 15,
+              titleside: 'right',
+              outlinecolor: 'rgba(68,68,68,0)',
+              ticks: 'inside',
+              ticklen: 6,
+              showticksuffix: 'all',
+              ticksuffix: 'devices',
+              dtick: 5000
+            }
+          },
+        }];
+        layout = {
+          height: 370,
+          width: 1400,
+          dragmode: 'zoom',
+          title: 'UH Access Point Data',
+          mapbox: {
+            pitch: 60,
+            bearing: 10,
+            center: {
+              lat: 21.2980,
+              lon: -157.817835
+            },
+            domain: {
+              x: [0, 1],
+              y: [0, 1]
+            },
+            style: 'light',
+            zoom: 15.8
+          },
+          margin: {
+            r: 590,
+            t: 0,
+            b: 0,
+            l: 0,
+            pad: 0
+          },
+
+          showlegend: false
+        };
+        Plotly.setPlotConfig({
+          mapboxAccessToken: 'pk.eyJ1IjoibXNlcmFpIiwiYSI6ImNqbTl1NWJ5ajAwMW8zcG1yNjY5emc5NnMifQ.Ig1yRjY3fv_Babaz0TbVOw'
+        });
+
+        var allAccessPoints = unpack(rows, 'name'),
+            allDate = unpack(rows, 'date'),
+            allTotal = unpack(rows, 'total'),
+            listOfAccessPoints = [],
+            currentAccessPoint,
+            currentTotal = [],
+            currentDate = [];
+
+        for (var i = 0; i < allAccessPoints.length; i++) {
+          if (listOfAccessPoints.indexOf(allAccessPoints[i]) === -1) {
+            listOfAccessPoints.push(allAccessPoints[i]);
+          }
+        }
+
+        function getAccessPointData(chosenAccessPoint) {
+          currentDate = [];
+          currentTotal = [];
+          for (var i = 0; i < allAccessPoints.length; i++) {
+            if (allAccessPoints[i] === chosenAccessPoint) {
+              currentTotal.push(allTotal[i]);
+              currentDate.push(allDate[i]);
+            }
+          }
+        }
+
+        setBubblePlot('Webster Hall');
+
+        function setBubblePlot(chosenAccessPoint) {
+          getAccessPointData(chosenAccessPoint);
+
+          var trace1 = {
+            x: currentDate,
+            y: currentTotal,
+            mode: 'lines+marker',
+            marker: {
+              size: 50,
+              opacity: 1
+            }
+          };
+
+          var data = [trace1];
+
+          var layout = {
+            height: 400,
+            width: 900
+          };
+
+          Plotly.newPlot(plots1, data, layout);
+        }
+
+        var innerContainer = document.querySelector('[data-num="0"'),
+            plotEl = innerContainer.querySelector('.plot'),
+            accessPointSelector = innerContainer.querySelector('.accessPointData');
+
+        function assignOptions(textArray, selector) {
+          for (var i = 0; i < textArray.length; i++) {
+            var currentOption = document.createElement('option');
+            currentOption.text = textArray[i];
+            selector.appendChild(currentOption);
+          }
+        }
+
+        assignOptions(listOfAccessPoints, accessPointSelector);
+
+        function updateAccessPoint() {
+          setBubblePlot(accessPointSelector.value);
+        }
+
+        accessPointSelector.addEventListener('change', updateAccessPoint, false);
+
+        /*Go*/
+        Plotly.plot('map', map, layout);
+
+        /**
+         * Load CSV data
+         */
+
+        AmCharts.loadFile(url, {}, function (dataset_url) {
+          /**
+           * Parse loaded CSV
+           */
+          var radialData = AmCharts.parseCSV(dataset_url, {
+            "separator": ",",
+            "useColumnNames": true,
+            //"useRowNames": true,
+            "numberFields": ["total"]
+          });
+          console.log(radialData)
+          // Themes begin
+          am4core.useTheme(am4themes_animated);
+          // Themes end
+
+          // Create chart instance
+          var chart = am4core.create("chartdiv", am4charts.RadarChart);
+          chart.scrollbarX = new am4core.Scrollbar();
+
+          var data = [];
+
+          for (var i = 0; i < radialData.length; i++) {
+            var dataItem = radialData[i];
+            console.log(dataItem);
+            var accessPoint = dataItem.name;
+            if (dataItem.name === "Art Building") {
+              data.push({ category: dataItem.date, value: dataItem.total });
+            }
+          }
+
+          chart.data = data;
+          chart.radius = am4core.percent(100);
+          chart.innerRadius = am4core.percent(50);
+
+          // Create axes
+          var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+          categoryAxis.dataFields.category = "category";
+          categoryAxis.renderer.grid.template.location = 0;
+          categoryAxis.renderer.minGridDistance = 30;
+          categoryAxis.tooltip.disabled = false;
+          categoryAxis.renderer.minHeight = 110;
+          categoryAxis.renderer.grid.template.disabled = true;
+          categoryAxis.renderer.labels.template.disabled = true;
+          let labelTemplate = categoryAxis.renderer.labels.template;
+          labelTemplate.radius = am4core.percent(-60);
+          labelTemplate.location = 0.5;
+          labelTemplate.relativeRotation = 90;
+
+          var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+          valueAxis.renderer.grid.template.disabled = true;
+          valueAxis.renderer.labels.template.disabled = true;
+          valueAxis.tooltip.disabled = true;
+
+          // Create series
+          var series = chart.series.push(new am4charts.RadarColumnSeries());
+          series.sequencedInterpolation = true;
+          series.dataFields.valueY = "value";
+          series.dataFields.categoryX = "category";
+          series.columns.template.strokeWidth = 0;
+          series.tooltipText = "{valueY}";
+          series.columns.template.radarColumn.cornerRadius = 10;
+          series.columns.template.radarColumn.innerCornerRadius = 0;
+
+          series.tooltip.pointerOrientation = "vertical";
+
+          // on hover, make corner radiuses bigger
+          let hoverState = series.columns.template.radarColumn.states.create("hover");
+          hoverState.properties.cornerRadius = 0;
+          hoverState.properties.fillOpacity = 1;
+
+          series.columns.template.adapter.add("fill", (fill, target) => {
+            return chart.colors.getIndex(target.dataItem.index);
+          })
+
+          // Cursor
+          chart.cursor = new am4charts.RadarCursor();
+          chart.cursor.innerRadius = am4core.percent(50);
+          chart.cursor.lineY.disabled = true;
+
+          function setDataSet() {
+            chart.dataProvider =  AmCharts.loadFile(building.value);
+            chart.validateData();
+            //heatmap.validateDate();
+
+          }
+
+        })
+      })
+    })
+      });
+
+
+</script>
+</body>
+</html>
