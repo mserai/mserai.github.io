@@ -27,6 +27,7 @@ summary: UH "Heat Map" w/ totals.
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
 </head>
 <body>
@@ -68,7 +69,7 @@ summary: UH "Heat Map" w/ totals.
     </div>
 </div>
     </div>
-  <div class="eight wide column" style="border-color: black">
+  <div class="twelve wide column" style="border-radius: 2px">
     <div class="ui container">
       <div class="showcase__section" id="bubble">
         <div class="spacer --small"></div>
@@ -220,7 +221,7 @@ summary: UH "Heat Map" w/ totals.
 
           var layout = {
             height: 400,
-            width: 900
+            width: 1200
           };
 
           Plotly.newPlot(plots1, data, layout);
