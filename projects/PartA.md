@@ -9,7 +9,7 @@ labels:
   - Javascript
   - CSS
   - Plot.ly
-summary: Data Visualization Project Part A
+summary: Cholera Data Visualization Project Part A. Heat Map of Deaths with Pump Locations.
 ---
 <html lang="en">
 <head>
