@@ -49,12 +49,7 @@
       ]
     },
     {
-      "name": "Robotics",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Social Engineering",
+      "name": "Digital Forensics",
       "keywords": [
       ]
     }
@@ -63,11 +58,11 @@
     {
       "name": "Languages and Frameworks",
       "keywords": [
+        "Python",
         "C",
-        "C++",
         "Java",
         "Javascript",
-        "SQL"
+        "Plot.ly"
       ]
     },
   ],
@@ -78,7 +73,7 @@
       "studyType": "B.A",
       "startDate": "2017-01-01",
       "endDate": "Present",
-      "gpa": "3.41",
+      "gpa": "3.52",
       "courses": ["Operating Systems", "Computer Security and Ethics", "Data Networks", "Security and Trust II: Information Assurance", "ICS 222, 314, 321, 355"
       ]
     },
