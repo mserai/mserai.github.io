@@ -6,7 +6,7 @@
     "email": "mserai@hawaii.edu",
     "phone": "808-226-0450",
     "website": "https://mserai.github.io",
-    "summary": "I am studying for a B.A. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2019.",
+    "summary": "I am a recent graduate of the University of Hawaii at Manoa with a B.A in Information and Computer Sciences - Security Science Track",
     "location": {
       "address": "98-112 Kaulike Dr.",
       "postalCode": "96782",
@@ -69,12 +69,12 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2019)",
+      "area": "Computer Science (Spring, 2019)",
       "studyType": "B.A",
       "startDate": "2017-01-01",
       "endDate": "Present",
-      "gpa": "3.52",
-      "courses": ["Operating Systems", "Computer Security and Ethics", "Data Networks", "Security and Trust II: Information Assurance", "ICS 222, 314, 321, 355"
+      "gpa": "3.53",
+      "courses": ["Operating Systems", "Machine Learning Fundamentals", "Data Science Fundamentals","Computer Security and Ethics", "Data Networks", "Security and Trust II: Information Assurance", "ICS 222, 314, 321, 355"
       ]
     },
     {
