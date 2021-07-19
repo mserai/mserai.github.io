@@ -4,15 +4,15 @@
     "label": "Student",
     "picture": "https://mserai.github.io/images/proprofile.jpg",
     "email": "mserai@hawaii.edu",
-    "phone": "808-226-0450",
+    "phone": "",
     "website": "https://mserai.github.io",
     "summary": "I am a recent graduate of the University of Hawaii at Manoa with a B.A in Information and Computer Sciences - Security Science Track",
     "location": {
-      "address": "98-112 Kaulike Dr.",
-      "postalCode": "96782",
-      "city": "Pearl City",
-      "countryCode": "USA",
-      "region": "Hawaii"
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
@@ -27,8 +27,8 @@
       },
       {
         "network": "instagram",
-        "username": "mserai",
-        "url": "http://instagram.com/mserai"
+        "username": "",
+        "url": ""
       }
     ]
   },
